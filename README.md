@@ -7,7 +7,7 @@ This project demonstrates a semantic similarity search application using [FAISS]
 ## Features
 
 - Loads and deduplicates sentences from multiple datasets.
-- Generates embeddings using a pre-trained Sentence Transformer model.
+- Generates embeddings using a pre-trained Sentence Transformer model 'bert-base-nli-mean-tokens'.
 - Stores embeddings in chunked `.npy` files for efficient memory usage.
 - Supports three FAISS index types:
   - Flat L2 (Exact)
@@ -16,4 +16,14 @@ This project demonstrates a semantic similarity search application using [FAISS]
 - Streamlit web interface for interactive semantic search.
 
 ## Project Structure
-
+|--
+|-- `src/`                  # Source code for the application
+|   |-- `main.py`           # Main application script
+|   |-- `faiss_index.py`    # FAISS index management
+|   |-- `sentence_transformer.py`  # Sentence Transformer model loading
+|-- `workspace/`            # Workspace for data processing and notebooks        
+|   |-- `Faiss_intro.ipynb` # Jupyter notebook for data preparation and embedding generation
+|   |-- `sim_sentences/`    # Directory for storing sentence embeddings
+|       |-- `embeddings_56.npy`  # Example embeddings file
+|-- `requirements.txt`      # Python package dependencies
+|-- `README.md`             # Project documentation 
