@@ -16,6 +16,7 @@ This project demonstrates a semantic similarity search application using [FAISS]
 - Streamlit web interface for interactive semantic search.
 
 ## Project Structure
+```
 |--
 |-- `src/`                  # Source code for the application
 |   |-- `main.py`           # Main application script
@@ -27,3 +28,4 @@ This project demonstrates a semantic similarity search application using [FAISS]
 |       |-- `embeddings_56.npy`  # Example embeddings file
 |-- `requirements.txt`      # Python package dependencies
 |-- `README.md`             # Project documentation 
+```
